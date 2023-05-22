@@ -1,0 +1,179 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+Day-1: 22-05-2023
+=================
+
+
+Three Layers
+
+
+	DBLayer			Backend layer			UILayer
+
+									HTML,CSS,Bootstrap,Javascript,agularjs,react,MERN,MEAN...
+
+
+HTML:
+====
+	STATIC WEB PAGES 
+
+
+1989--TIM BERNERS LEE
+1991--HTML
+
+2008-->HTML5
+
+2014 
+
+HTML 5.2 2017
+
+	<html>
+	<head>
+	
+	</head>
+	<body>
+	
+	
+	</body>
+	
+	
+	</html>
+
+
+browsers
+	
+	engine-->google=>v8 -->DOM
+
+CSS:
+	CSS3
+
+Styles
+
+	inline		html tag  <
+	internal	<head><style>css syntax
+	external
+	
+
+
+selector{
+propname:value,
+proname1:value1.....
+
+}
+
+Angular=html+css+ts+spec.ts
+
+
+
+JavaScript:
+===========
+<html>
+<head>
+
+<script src="external.js">
+
+<body>
+<script>
+
+var name="next tech" //dynamic typed PL
+
+function add()
+{
+var marks=2345;
+document.write("welcome to JS");
+}
+add()
+</script>
+
+<body>
+
+</html>
+
+
+Typescript:
+============
+developed and created and maintained by microsoft 
+
+
+
+
+var a="nexttech";//dynamic typed 
+a=123;
+a=true;
+
+function add(a,b)
+{
+return a+b
+}
+
+add("suresh","mahesh")
+
+
+var a:string="nexttech"
+
+oct 2012
+ts 4.0 2020
+
+
+
+ts =js+type
+
+
+ts-->browser cannot understand 
+		
+	ts-->js
+
+tsc -->typescript comiler -->JS-->transpilation-->transpiler 
+
+tsc filename.ts
+
+
+
+nodejs
+npm
+
+node -v
+
+
+npm -v
+
+		npm install -g typescript
+
+
+		npm install -g @angular/cli
+
+		npm install -g create-react-app
+
+
+
+
+
+class Parent
+{
+
+100 functions....
+
+}
+
+class Child
+{
+20 functions
+
+
+}
+
+class			collection of only concrete methods
+abstract class	combination of both abstract and concrete methods
+interface		collection of only abstract methods
+
+https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/
