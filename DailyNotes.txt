@@ -140,22 +140,23 @@ tsc filename.ts
 
 
 nodejs
+https://nodejs.org/en/download
+
 npm
 
 node -v
 
 
-npm -v
+npm -v			
 
 		npm install -g typescript
 
-
-		npm install -g @angular/cli
+		npm install -g @angular/cli 
 
 		npm install -g create-react-app
 
 
-
+ng --version
 
 
 class Parent
@@ -177,3 +178,139 @@ abstract class	combination of both abstract and concrete methods
 interface		collection of only abstract methods
 
 https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/
+
+
+Angular=ts+html+css+spec.ts
+
+
+angular js framework -->google
+
+it is JS open source framework written in TS
+angular 2
+single page applications
+
+
+Declarative UI
+
+
+Components:
+============ Building blocks of an application
+
+@Component
+
+
+angular cli
+
+new project creation using command 
+
+	ng new projectname 
+
+
+ng serve -o
+
+
+@Component({
+  selector: 'app',
+  template: `
+  <h1>welcome to angular {{title}} india</h1>
+  
+  `,
+  styles:[` h1{color:red}`]
+  
+})
+export class AppComponent {
+  title = 'NextTech';
+}
+
+
+ng generate component login
+
+ng g c login --skip-tests true
+
+ng serve -o 
+ng serve -o --port=1111
+
+
+Data Binding:
+=============
+component to view 
+
+view to component
+
+one way data binding(from component(model) to view)
+
+	.interploation {{}} 
+
+	.prperty binding  [binding-target]="binding-source"
+
+	.event binding   (target-event)="templatestatement"
+
+two way data binding
+
+
+
+for -->for
+
+Directives:
+
+		*ngFor *ngIf *ngSwitch
+
+ emps:any[];
+  constructor() {
+    this.emps=[
+      {empcode:'emp101',name:"akash",dateOfBirth:'10/11/1993',gender:"male",sal:12000.123},
+     {empcode:'emp102',name:"pranay" ,dateOfBirth:'08/23/1990',gender:"male",sal:22000.123},
+    {empcode:'emp103',name:"srikanth", dateOfBirth:'06/11/1991',gender:"male", sal:32000.121},
+    {empcode:'emp104',name:"deepa" ,dateOfBirth:'07/15/1988',gender:"female",sal:42000.900},
+    {empcode:'emp105',name:"ramya" ,dateOfBirth:'06/19/1993',gender:"female",sal:20000.631}
+      ];
+   }
+   
+   
+   html...
+   
+   
+   <html>
+<head>
+
+
+</head>
+<body>
+
+<table class="table table-dark">
+<tr>
+<th>EmpId</th>
+<th>EmpName</th>
+<th>DOB</th>
+<th>Gender</th>
+<th>Salary</th>
+</tr>
+<tr *ngFor="let emp of emps">
+<td>{{emp.empcode}}</td>
+<td>{{emp.name}}</td>
+<td>{{emp.dateOfBirth}}</td>
+<td>{{emp.gender}}</td>
+<td>{{emp.sal}}</td>
+
+</tr>
+<tr *ngIf="emps.length==0">
+    <td>No Employees To Display</td>
+</tr>
+
+</table>
+
+</body>
+
+
+</html>
+
+
+bootstrap CDN link add it in index.html
+
+   
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+   
+   
+   
+   
