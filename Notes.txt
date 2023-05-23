@@ -1,0 +1,377 @@
+Day-1:
+========
+Angular:12  html+css+ts+spec.ts
+
+TypeScirpt:
+===========
+
+HTML:it is used to create static web pages 
+
+	engine:V8  				
+	IE :chakra 
+	firefox:spider monkey
+
+	DOM TREE
+	
+		basic html tags,form tags,table,img,audio,vedio
+		
+		<input type="text" name="uname"/>
+
+CSS:it is used apply styles html tags 
+		selector{propname:propvalue}
+
+JS:<script>
+	var name="nexttech";dynamic typed pl
+		name=123;
+	int id=123;
+		
+			function sayHello(){
+			
+			
+			}
+
+
+TS:static typed programming language
+
+var name:String="day-1";
+		name=123;
+
+
+		variables
+			1)local 	with in function/block will create and acccesable upto function
+			2)global	outside function and with in class and any where we can access
+					i)	instance  unique data   for every object creation
+					ii)	static 		nexttech memory space only once
+
+			instance variables can be accessed by using obj ref(this)
+			static variables can be accessed by using classname
+			
+
+
+			html,css,ts
+inheritance can be acheived by using two keywords extends and implements
+interface A
+
+class B implements A 
+
+
+class A
+100 
+
+class B extends A
+
+import 
+export
+module
+
+
+we can define variable in js/ts by using three keywords  var,let,const
+
+
+
+var-->global/function scope
+let-->block scope
+const-->block scope
+
+Angular:
+=========== 2016 first version.....>15 latest version 2022
+js framework
+google    angular js 
+		  angular2
+
+MVC based application
+
+SPA MPA
+
+emp	  ui		PROCESSING
+data 
+Model view controller 
+
+
+
+Angular CLI:
+
+node js
+
+		npm install "packagename" -g
+
+		npm install @angular/cli -g
+
+
+ng version
+
+
+ng new firstapp
+
+4200
+
+ng serve -o
+
+App Component-->root component
+
+<app-root>  -->selector name of the root component
+
+component->building block of angular app-->html,css,ts,spec.ts
+
+
+		{{}}-->binding expression
+
+
+Pipe:
+to transform(filter)the data 
+
+		predefined
+		user defined 
+		
+		|
+		https://angular.io/guide/pipes
+custom pipe :
+===============
+	 ng g p pipename
+
+		@Pipe
+
+		PipeTransform
+
+
+
+routing:
+==========
+	routerLink
+	router-outlet
+	path and component 
+	
+	
+forms:
+======	
+	1)template driven form 
+	2)model driven forms /reactive form 
+
+
+Assignment1:
+============
+			
+				homepage 
+				
+				login 						registration
+				
+
+username 	nexttech				username
+	
+password	nexttech123				password
+
+									contact
+									
+									mailid
+									
+									address
+			submit								register
+			
+			
+			
+		if match alert("login success");		alert(all the details ...)
+		
+		else  alert("login failed")
+
+Day-3:
+=======
+
+Component communication
+
+		@input
+		@output
+			EventEmitter
+
+
+Dependecy Injection:
+==================
+	design pattern
+	
+	client class	 service class
+	
+	
+			INJECTOR CLASS--loosley coupled
+	
+constructor injection
+
+setter injection
+
+interface injection
+
+
+
+
+class PostalDetails
+{
+Number number;
+Address address;
+
+constructor()
+{
+this.number=new Number("");
+this.address=new Address();
+}
+
+
+}
+
+class Number{
+constructor(name:string)
+{
+
+}
+
+}
+
+ng g s servicename
+
+HttpClient
+-->service class 
+
+	http:get,post,put,delete
+
+
+
+JSON
+
+{
+eid:123,
+ename:"mahesh",
+esal:12000
+eaddress:"hyderabad"
+
+}
+
+angular ->products.json
+
+HttpClient
+
+Authguards:
+===============
+
+ng g g guardname
+
+
+app-routing.module.ts
+
+			path :"" ,component:Component,canActivate:guardname
+
+
+Observable and Promice:
+=======================
+	JS single threaded language
+
+	synchronous 
+
+Asynchronous Operations
+
+	Promise 
+	
+			Observable	 rxjs 
+
+Promise						Observable
+
+eager 						Lazy subscribe 
+
+
+emit single value			emit multiple values
+
+
+we dont have operators       map,filter,reduce,retry
+	
+promise cant be cancel			observable can cancel by using unsubscribe 
+
+
+
+to get Observable 
+npm install rxjs
+
+
+Rest API
+
+
+	npm install -g json-server
+	
+	json-server --watch data.json
+	
+	
+	localhost:3000/users
+	service
+			HttpClient
+					get,post,put,delete....
+	
+Angular Testing:
+==================	
+
+Unit Testing 				10,20=200
+
+					add 
+						a*b
+						
+			jasmine and karma
+			
+E2E testing
+
+
+		protractor & cucumber
+		
+		
+		spec.ts
+		
+Jasmine Framework:
+==================	
+		BDD
+		
+		
+		
+Karma 
+
+protractor--google
+		
+		
+		ng test -->to run test cases 
+		
+		spec.ts
+		
+		
+		ng test 
+		
+		jasmine report
+		
+		
+Describe
+
+
+Specs	it,which,like
+
+
+Expect
+
+
+Matcher 		
+		
+		describe("",function{
+		it("check login screen,func"){
+		
+		
+		}
+		it("check input of login screen,func"){
+		
+		
+		}
+		
+		
+		})		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
