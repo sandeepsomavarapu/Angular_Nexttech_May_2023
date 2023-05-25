@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "delllaptop",
+      "email": "dell@gmail.com"
+    },
+    {
+      "id": 1122,
+      "name": "ravikumar",
+      "email": "ravi@gmail"
+    },
+    {
+      "id": 4545,
+      "name": "naresh",
+      "email": "s.naresh0156"
+    },
+    {
+      "id": 111,
+      "name": "suresh",
+      "email": "qwerty@gmail.com"
+    }
+  ]
+}
