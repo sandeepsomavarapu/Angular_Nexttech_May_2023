@@ -1,0 +1,617 @@
+	HTML:
+
+css:inline ,internal,external.....
+
+javascript is dynamic typed programming language
+
+typescirpt is static typed programming language
+
+	
+				var a=123;//dynamic typed programming
+					a="sandeep"//valid
+					
+				var a:number=123;//static typed
+				a="hello";//invalid 
+				
+typescirpt = JS+DT
+									angular=ts+html+css
+					
+javascript:front end validations,make dynamic 
+
+			css frameworks bootstrap---twitter
+
+				dt varname=value
+				
+				var  a=123;//let
+				
+				public void m1()
+				{
+				....
+				}
+				
+			function sayHello()	
+				{
+
+				}		
+https://www.mindk.com/blog/single-page-applications-the-definitive-guide/				
+						angular 2 type script
+Angular js (javascript)--->spa,mvc--->component(class)--->
+
+component-->class
+mvc
+
+
+react view 
+websites :gmail....
+
+	collection of webpages 
+	
+	
+	2 types of webpages 
+			
+				static web page 		content fixed   html,css.....
+				dynamic web page		 content dynamically
+
+
+angular:angular2 typescirpt  component 
+---------angularjs  ---typescript ts   class-component  SPA
+1)one of the javascript frameworks
+
+MPA		Angular js 		javang cript  angular 2 ts
+SPA--->main			header
+
+
+
+sidebar				body			right sidebar
+
+
+				footer
+
+Component based communication	TS		angular=html+css+ts
+													spec.ts
+MVC-->
+Model --->model means DATA(Employee)
+
+view-->UI
+
+Controller-->
+
+mystyles.css
+
+
+index.html
+
+
+
+ts-->compilation(transpilation)
+
+.js --->.ts  (datatypes)
+
+tsc 
+
+node js
+
+
+node -v
+
+npm -v
+
+npm install typescript -g
+
+CLI
+
+
+npm install -g @angular/cli
+
+Introduction:
+==============  SPA
+
+** Everything we need to think in component based ....(root component and child components)
+
+setup :
+-------
+we need to have node and editior like visual studio and angular CLI....
+
+
+https://nodejs.org/en/download/
+
+
+http://code.visualstudio.com
+
+
+https://cli.angular.io/
+
+npm install typescript -g
+
+npm install @angular/cli -g
+
+npm install create-react-app -g
+
+to install angular CLI  we need to use npm ...
+
+
+npm install package name 
+
+npm install @angular/cli 
+
+for global
+
+
+npm install @angular/cli -g
+
+ng v works in latest versions 14.x
+ 
+ng version (latest)
+
+
+ng new welcomeapp
+
+
+ng new ProjectName-->parent component  ->APP--->.css,html,ts,spec.ts(testing)
+
+ng v to know the version... 
+
+To RUN ANGULAR ng is the command...ng serve -o      4200  
+
+CLI   
+
+
+To know version CLI -->ng --version
+
+ng generate component login
+
+ng new welcome(Component)
+
+ng g c addEmp
+
+ng g c updateEmp
+
+ng g c deleteEmp
+
+ng g s 
+
+pipes--->lowercase,
+
+service(HtppService)----
+
+
+
+
+To create new project in angular using this command:
+----------------------------------------------------
+
+ng new  projectname
+
+ng new empCRUD --skip-tests true(to skip spec files)
+
+ng new first-app(special charecters  are not allowed in projectname...)
+
+then all the dependencies will add to your project ....package.json
+
+
+
+*ngFor
+
+to run app 
+
+ng serve -o  --port 1111
+
+
+DemoEx with template and styles:
+================================
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'root',
+  template: `
+  <h1>welcome to angular</h1>
+  <p>welcome to databinding</p>
+  `,
+  styles: [`h1{
+    color:red
+  }p{color:blue}`]
+})
+export class AppComponent {
+  title = 'AngularDemo';
+}
+
+
+app-routing.module.ts
+
+
+		login --->LoginComponent
+		register-->RegisterCOmponent
+		.....
+
+to create our own componenets 
+
+in cmd--
+	
+* ng generate component  welcome
+
+*ng g c login
+
+to create with style and routing:-
+=================================
+ng new ng6-proj --style=scss --routing
+
+
+ng serve -o      4200
+
+The -o flag tells the CLI to launch your browser with the project.
+
+
+with userdefined port 
+
+ng serve --port 1234
+
+app.component.ts
+The @Component decorator is an object with associated property / value pairs that defines 
+important stuff associated with this component.
+
+
+
+Data Binding:
+===========
+ts -->html  {{}}
+
+model--->view
+							{{}}					[]				() ngsubmit,click
+1)one way data binding 	(String interpolation,property binding,event binding)
+
+2)two way data binding    model<--->view		[(ngModel)],FormsModule
+
+generating routing module:
+============================
+ng g m app-routing --flat --module=app 
+
+	--flat to avoid directory creation and keep this routing inside src/app
+
+	--module tells ng-generate register this module with imports in app.module.ts
+
+	
+
+emplyoee
+
+ng g p genderpipe
+
+ng g d directivename
+
+install Bootstrap for angular 6.....
+ 
+
+npm install -g 	bootstrap@4 jquery --save
+
+npm install -g bootstrap@4.0.0-beta jquery --save
+
+ npm install -g bootstrap@4.0.0-alpha.6 jquery --save
+custom directive:
+------------------
+
+
+inbuilt directives
+
+custom directives...
+
+
+ng generate directive directive name
+
+ng g m app-routing 
+
+
+
+
+Service:
+=========
+ng g service testservice   @injectable
+param constructor...
+
+constructor(s:testservice)...
+
+ Reactive forms in Angular:
+ ----------------------------
+
+ There are 2 ways to create forms in Angular 
+1. Template Driven Forms 
+2. Reactive Forms (Also called Model Driven Forms)
+
+
+
+1. Template Driven Forms :
+==========================
+
+Template Driven Forms are heavy on the template meaning we create the form completely in HTML. 
+
+ngForm
+ngmodel			import FormsModule in app.module.ts
+
+	ngSubmit
+
+
+
+
+Model Driven forms:Classes for creating a form control tree:
+-----------------------------------------
+FormGroup
+FormControlName				import ReactiveFormsModule in app.module.ts
+
+* When working with reactive forms we create instances of FormControl and FormGroup classes to create a form model.
+* To bind an HTML <form> tag in the template to the FromGroup instance in the component class, we use formGroup directive
+* To bind an  HTML <input> element in the template to the FormControl instance in the component class, we use formControlName directive  
+* Both FormControl and FormGroup classes inherit from AbstractControl base class
+* The AbstractControl class has properties that help us track both FormControl and FormGroup value and state
+  
+  useful properties provided by the AbstractControl class 
+value
+errors
+valid
+invalid
+dirty
+pristine
+touched
+untouched
+
+State	                          Class if true	     Class if false
+The control has been visited.	   ng-touched	     ng-untouched
+The control's value has changed.   ng-dirty          ng-pristine
+The control's value is valid.	   ng-valid	         ng-invalid
+
+
+** FormControl instance tracks the value and state of the individual html element it is associated with 
+  
+** FormGroup instance tracks the value and state of all the form controls in it's group  
+
+  
+  
+  To access a FormControl in a FormGroup, we can use one of the following 2 ways. 
+
+employeeForm.controls.fullName.value
+employeeForm.get('fullName').value
+
+
+In addition to these properties, AbstractControl also provides some methods.
+
+setValidators()
+clearValidators()
+updateValueAndValidity()
+setValue()
+patchValue()
+Reset()
+
+
+
+
+
+nested form group:
+===================
+
+
+ts:
+----
+ngOnInit() {
+  this.employeeForm = new FormGroup({
+    fullName: new FormControl(),
+    email: new FormControl(),
+    // Create skills form group
+    skills: new FormGroup({
+      skillName: new FormControl(),
+      experienceInYears: new FormControl(),
+      proficiency: new FormControl()
+    })
+  });
+}
+
+
+
+
+html
+======
+
+<form  [formGroup]="employeeForm"  (ngSubmit)="onSubmit()">
+      <h3>Create Employee</h3>
+       <div class="form-group">
+  Full Name:<input id="fullName" type="text" class="form-control" formControlName="fullName">
+      </div>    
+       <div class="form-group">
+        Email:<input id="email" type="text" class="form-control" formControlName="email">
+      </div>
+      <div formGroupName="skills">
+          <div class="form-group">
+              Skill
+              <input type="text" class="form-control" id="skillName"
+                  placeholder="Name" formControlName="skillName">
+              <input type="text" placeholder="Experience in Years"
+                  class="form-control" formControlName="experienceInYears">
+          </div>
+      </div>
+          <div class="form-group">
+            <label class="col-md-2 control-label">Proficiency</label>
+                <input id="proficiency" type="radio" value="beginner"
+                       formControlName="proficiency">Beginner
+                <input id="proficiency" type="radio" value="intermediate" 
+                formControlName="proficiency">Intermediate
+                <input id="proficiency" type="radio" value="advanced"
+                       formControlName="proficiency">Advanced
+          </div>
+      <button type="submit">Save</button>
+</form>
+<table border="1">
+    <tr>
+      <th style="padding: 10px">FormGroup</th>
+      <th style="padding: 10px">FormControl (fullName)</th>
+    </tr>
+    <tr>
+      <td style="padding: 10px">
+        touched : {{ employeeForm.touched }}
+        <br/> dirty : {{ employeeForm.dirty }}
+        <br/> valid : {{ employeeForm.valid }}
+        <br/> Form Values : {{employeeForm.value | json}}
+      </td>
+      <td style="padding: 10px">
+        touched : {{ employeeForm.get('fullName').touched }}
+        <br/> dirty : {{ employeeForm.get('fullName').dirty }}
+        <br/> valid : {{ employeeForm.get('fullName').valid }}
+        <br/> FullName Value : {{employeeForm.get('fullName').value}}
+      </td>
+    </tr>
+  </table>
+
+
+
+Using FormBuilder:
+--------------------
+In Angular, there are 2 ways to create reactive forms 
+Explicitly creating instances of FormGroup and FormControl classes using the new keyword. We discussed this in Part 4 and Part 6 of Angular 6 tutorial.
+Using the FormBuilder class
+ 
+ 
+
+The FormBuilder class provides syntactic sugar that shortens creating instances of a FormControl, FormGroup, or FormArray. It reduces the amount of code we have to write to build complex reactive forms. The FormBuilder service has three methods:  
+control() - Construct a new FormControl instance
+group() - Construct a new FormGroup instance
+array() - Construct a new FormArray instance
+We will discuss FormArrays in our upcoming videos. 
+
+Step 1 : Import FormBuilder  
+
+The FormBuilder class is provided as a service, so first let's import the service 
+
+import { FormBuilder } from '@angular/forms';
+
+Step 2 : Inject the FormBuilder service  
+
+Once the FormBuilder service is imported, inject it into the component using the constructor 
+
+constructor(private fb: FormBuilder) { }
+
+Step 3 : Use the FormBuilder  
+Notice in the example below, we are using the FormBuilder group() method to create a FormGroup instance. 
+To the method we pass an object that contains a collection of child controls. 
+For each child control we specify a key and value. 
+Key is the name of the form control and the value is an array.
+The first element of the array is used to specify an initial value for the form control.
+The second and third elements of the array are used to specify synchronous and asynchronous validators for the form control. We will discuss these when we discuss form validation in our upcoming videos.
+For now, we have defined just the initial value using the first element of the array.
+We have specified an empty string as the default value for all the controls except proficiency radio buttons.
+For proficiency we have a default value of beginner. So the respective radio button is selected when the form loads.
+
+this.employeeForm = this.fb.group({
+  fullName: [''],
+  email: [''],
+  skills: this.fb.group({
+    skillName: [''],
+    experienceInYears: [''],
+    proficiency: ['beginner']
+  }),
+});
+
+FormBuilder reduces the amount of boilerplate code we have to write to build complex reactive forms. 
+  
+  
+Emp CRUD using Anguar6:
+========================
+
+ng g c employees/listemployees --spec false --flat --true
+
+
+ng g c employees/createEmployees --spec false --flat --true
+
+
+  
+  Execute the following command to install JSON server
+npm install -g json-server
+
+Execute the following command to start the server
+json-server --watch filename.json
+
+  
+  for creating router 
+  
+  ng g module [module-name] --routing
+  
+  ng g s 
+  
+  
+ Nested Components:
+------------------
+
+@Component
+@Injectable
+@NgModule
+@Pipe
+
+
+		@Input
+		@Output
+
+	ng g c child --spec=false -it is
+  
+  
+  
+Promises and Observables are 2 ways through which we can perform asynchronous operation in angular  
+  
+  Javascript is a single threaded language ,it executes code in order and must finish executing a piece code before moving onto the next
+  
+		one thing can happen at a time 
+		
+		
+		
+Asynchronous javscript ,you can perform long network requests without blocking the main thread	
+  
+  
+  Promise is native in javascript  and other one is Observable which is part of Rxjs(Reactive extension for js)
+  
+  
+  Promise is  eager which means it call as soon as we define and observable are lazy and it will not make a call.
+
+
+
+Observable need a subscribe
+
+		promise can emit single value
+		
+		Observable can return multiple values
+
+
+		observable works like array so we can use many operators 
+
+
+
+
+Angular provides lots of features and ready-to-use services which allow seamless development of awesome web application.
+
+And protecting routes with Guards are one of the important and useful feature.
+
+
+
+ng g g guardname
+  
+  
+Fake Rest API
+
+npm install json-server -g
+
+
+
+
+export class Employee{
+eid:number=123;
+ename:string="mahesh";
+
+}
+
+JSON
+
+	{
+	"eid":123
+	"ename":"mahesh"...
+							service class
+	}					HttpClient-->GET,PUT,POST,DELETE
+	
+		JSON-server 					Angular Rest API
+
+		java							add update delete feta...
+
+webservices:	
+		SOAP 		REST
+		xml			XML,JSON,PT,JS,HTML			
